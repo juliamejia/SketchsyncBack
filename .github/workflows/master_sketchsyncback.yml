@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'sketchsyncback'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C37E347F20C44F3594D5BAF5F144A65E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D7F7B246296040DD8AA1A4EA757617BC }}
           package: '*.jar'
