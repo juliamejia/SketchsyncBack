@@ -23,9 +23,7 @@ public class SketchsyncWebSocketConfig implements WebSocketMessageBrokerConfigur
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/stompendpoint")
-                .addInterceptors(new HttpSessionHandshakeInterceptor())
-                .setHandshakeHandler(new DefaultHandshakeHandler())
-                .setAllowedOrigins("https://sketchsync.azurewebsites.net/index.html")
+                .setAllowedOrigins("https://sketchsync.azurewebsites.net")
                 .withSockJS();
     }
 }
