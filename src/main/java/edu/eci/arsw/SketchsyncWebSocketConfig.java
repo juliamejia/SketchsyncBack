@@ -26,7 +26,8 @@ public class SketchsyncWebSocketConfig implements WebSocketMessageBrokerConfigur
                 .setAllowedOrigins("https://sketchsync.azurewebsites.net",
                         "https://sketchsyncback.azurewebsites.net",
                         "http://sketchsync.azurewebsites.net",
-                        "http://sketchsyncback.azurewebsites.net")
+                        "http://sketchsyncback.azurewebsites.net",
+                        "https://sketchsyncback.azurewebsites.net/Sketchsync")
                 .withSockJS();
     }
 }
