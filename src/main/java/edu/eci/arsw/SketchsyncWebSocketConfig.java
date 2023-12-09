@@ -23,7 +23,10 @@ public class SketchsyncWebSocketConfig implements WebSocketMessageBrokerConfigur
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/stompendpoint")
-                .setAllowedOrigins("https://sketchsync.azurewebsites.net")
+                .setAllowedOrigins("https://sketchsync.azurewebsites.net",
+                        "https://sketchsyncback.azurewebsites.net",
+                        "http://sketchsync.azurewebsites.net",
+                        "http://sketchsyncback.azurewebsites.net")
                 .withSockJS();
     }
 }

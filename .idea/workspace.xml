@@ -7,7 +7,6 @@
     <list default="true" id="c4596761-e2ff-448b-9c64-2e18a0df9c8b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/SketchsyncWebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/SketchsyncWebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/SketchsyncWebSocketConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/SketchsyncWebSocketConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/julia/OneDrive/Escritorio/SEMESTRES/SEMESTRE 9/ARSW/Mejia_Rodriguez/SketchsyncBack/SketchSyncBack"
+    "last_opened_file_path": "C:/Users/julia/OneDrive/Escritorio/SEMESTRES/SEMESTRE 9/ARSW/Mejia_Rodriguez/SketchsynFront/SketchSyncFront"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
