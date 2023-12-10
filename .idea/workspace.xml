@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4596761-e2ff-448b-9c64-2e18a0df9c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/SketchsyncWebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/eci/arsw/SketchsyncWebSocketConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="c4596761-e2ff-448b-9c64-2e18a0df9c8b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +39,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/julia/OneDrive/Escritorio/SEMESTRES/SEMESTRE 9/ARSW/Mejia_Rodriguez/SketchsynFront/SketchSyncFront"
+    "last_opened_file_path": "C:/Users/57320/OneDrive - ESCUELA COLOMBIANA DE INGENIERIA JULIO GARAVITO/Uni/2023-2/Proyect ARSW/SketchsyncBack"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
