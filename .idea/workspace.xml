@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4596761-e2ff-448b-9c64-2e18a0df9c8b" name="Changes" comment="" />
+    <list default="true" id="c4596761-e2ff-448b-9c64-2e18a0df9c8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/master_sketchsyncback.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/master_sketchsyncback.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sketchsync.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sketchsync.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/SketchsyncAPIApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/SketchsyncAPIApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/SketchsyncWebSocketConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/SketchsyncWebSocketConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/controllers/STOMPMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/controllers/STOMPMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/controllers/SketchsyncAPIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/controllers/SketchsyncAPIController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/model/Clue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/model/Clue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/model/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/model/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/persistence/SketchsyncPersistence.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/persistence/SketchsyncPersistence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/persistence/SketchsyncPersistenceException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/persistence/SketchsyncPersistenceException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/persistence/impl/InMemorySketchsyncPersistence.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/persistence/impl/InMemorySketchsyncPersistence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/eci/arsw/services/SketchsyncServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/eci/arsw/services/SketchsyncServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sketchsync-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/sketchsync-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sketchsync-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/sketchsync-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.eci.arsw.services.SketchsyncServicesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-edu.eci.arsw.services.SketchsyncServicesTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/edu.eci.arsw.services.SketchsyncServicesTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/edu.eci.arsw.services.SketchsyncServicesTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/eci/arsw/services/SketchsyncServicesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/eci/arsw/services/SketchsyncServicesTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
