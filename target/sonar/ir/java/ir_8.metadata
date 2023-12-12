@@ -1,0 +1,3 @@
+edu.eci.arsw.model.User#deletePoints()V
+==
+clear java.util.ArrayList#clear()V

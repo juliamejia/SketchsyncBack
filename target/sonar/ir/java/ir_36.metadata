@@ -1,0 +1,5 @@
+edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence#TakeClue()Ljava/lang/String;
+==
+getContenido edu.eci.arsw.model.Clue#getContenido()Ljava/lang/String;
+getTomada edu.eci.arsw.model.Clue#getTomada()Z
+setTomada edu.eci.arsw.model.Clue#setTomada(Z)V

@@ -1,0 +1,7 @@
+edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence#getAllUsers()Ljava/util/Set;
+java.util.HashSet#<init>()V
+java.util.HashSet#instance-init#
+==
+get java.util.Map#get(Ljava/lang/Object;)Ljava/lang/Object;
+keySet java.util.Map#keySet()Ljava/util/Set;
+add java.util.Set#add(Ljava/lang/Object;)Z

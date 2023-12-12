@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#addPointToUser(Ledu/eci/arsw/model/User;)V
+==
+addPointToUser edu.eci.arsw.persistence.SketchsyncPersistence#addPointToUser(Ledu/eci/arsw/model/User;)V

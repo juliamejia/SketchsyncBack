@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#getUser(Ljava/lang/String;)Ledu/eci/arsw/model/User;
+==
+getUser edu.eci.arsw.persistence.SketchsyncPersistence#getUser(Ljava/lang/String;)Ledu/eci/arsw/model/User;

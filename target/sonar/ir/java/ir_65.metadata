@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#delteAllPointsUser(Ljava/lang/String;)V
+==
+delteAllPointsUser edu.eci.arsw.persistence.SketchsyncPersistence#delteAllPointsUser(Ljava/lang/String;)V

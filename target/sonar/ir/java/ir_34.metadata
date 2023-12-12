@@ -1,0 +1,3 @@
+edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence#deleteParticipantes()V
+==
+clear java.util.Map#clear()V

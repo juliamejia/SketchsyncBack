@@ -1,0 +1,65 @@
+
+Xedu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence#TakeClue()Ljava/lang/String;Ë
+À/C:/Users/57320/OneDrive - ESCUELA COLOMBIANA DE INGENIERIA JULIO GARAVITO/Uni/2023-2/Proyect ARSW/SketchsyncBack/src/main/java/edu/eci/arsw/persistence/impl/InMemorySketchsyncPersistence.javak k("4*Ô
+2o o(ž
+›
+o o(
+%3edu.eci.arsw.model.Clue"__id*j
+
+__unknown_file (N*L=
+;edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence"
+	nuevaClue­ª
+o o()
+
+%4void"%edu.eci.arsw.model.Clue#setTomada(Z)V*;
+
+__unknown_file (
+
+%3edu.eci.arsw.model.Clue* 
+
+__unknown_file (22setTomada(Z)ž
+›
+p p( 
+%5edu.eci.arsw.model.Clue"__id*j
+
+__unknown_file (N*L=
+;edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence"
+	nuevaClue¬©
+p p(/
+%6java.lang.String"8edu.eci.arsw.model.Clue#getContenido()Ljava/lang/String;*;
+
+__unknown_file (
+
+%5edu.eci.arsw.model.Clue2getContenido()"$
+p p(0
+
+%6java.lang.String*Å
+3n n(ž
+›
+n n(
+%1edu.eci.arsw.model.Clue"__id*j
+
+__unknown_file (N*L=
+;edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence"
+	nuevaClueŒ‰
+n n(&
+%2boolean"$edu.eci.arsw.model.Clue#getTomada()Z*;
+
+__unknown_file (
+
+%1edu.eci.arsw.model.Clue2getTomada()*
+2
+1*³
+4l l(ž
+›
+l l(
+%0edu.eci.arsw.model.Clue"__id*j
+
+__unknown_file (N*L=
+;edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence"
+	nuevaClue*
+3*3
+1r r(-"$
+r r(.
+Pista no disponible!B?=
+;edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistenceH

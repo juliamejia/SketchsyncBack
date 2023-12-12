@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#TakeClue()Ljava/lang/String;
+==
+TakeClue edu.eci.arsw.persistence.SketchsyncPersistence#TakeClue()Ljava/lang/String;

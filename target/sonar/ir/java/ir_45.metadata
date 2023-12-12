@@ -1,0 +1,4 @@
+edu.eci.arsw.SketchsyncWebSocketConfig#configureMessageBroker(Lorg/springframework/messaging/simp/config/MessageBrokerRegistry;)V
+==
+enableSimpleBroker org.springframework.messaging.simp.config.MessageBrokerRegistry#enableSimpleBroker([Ljava/lang/String;)Lorg/springframework/messaging/simp/config/SimpleBrokerRegistration;
+setApplicationDestinationPrefixes org.springframework.messaging.simp.config.MessageBrokerRegistry#setApplicationDestinationPrefixes([Ljava/lang/String;)Lorg/springframework/messaging/simp/config/MessageBrokerRegistry;

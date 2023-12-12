@@ -1,0 +1,89 @@
+
+ledu.eci.arsw.controllers.SketchsyncAPIController#getOrganizerName()Lorg/springframework/http/ResponseEntity;¿
+µ/C:/Users/57320/OneDrive - ESCUELA COLOMBIANA DE INGENIERIA JULIO GARAVITO/Uni/2023-2/Proyect ARSW/SketchsyncBack/src/main/java/edu/eci/arsw/controllers/SketchsyncAPIController.java (-"6*â
+2 (-u
+s
+ (-$
+	Organizeredu.eci.arsw.model.User"__id*;
+
+__unknown_file (
+
+%1edu.eci.arsw.model.User*
+1*ô
+5 (ù
+ö
+ (.
+%0(edu.eci.arsw.services.SketchsyncServices"__id*X
+
+__unknown_file (<*:2
+0edu.eci.arsw.controllers.SketchsyncAPIController"
+ds‰·
+ (-
+%1edu.eci.arsw.model.User"Tedu.eci.arsw.services.SketchsyncServices#getOrganizerName()Ledu/eci/arsw/model/User;*L
+
+__unknown_file (0
+.
+%0(edu.eci.arsw.services.SketchsyncServices2getOrganizerName()*
+2*p
+6 (\
+Z
+ ($
+	Organizeredu.eci.arsw.model.User"__id*"
+
+__unknown_file (
+""*
+5*Å	
+1   (><
+   (
+%5com.google.gson.Gson"com.google.gson.Gsonl
+j
+   (
+%6"com.google.gson.Gson#<init>()V*8
+
+__unknown_file (
+
+%5com.google.gson.Gsonj
+h
+   (
+gsoncom.google.gson.Gson"__id*8
+
+__unknown_file (
+
+%5com.google.gson.GsonÑÅ
+!$ !(:
+%7java.lang.String"Acom.google.gson.Gson#toJson(Ljava/lang/Object;)Ljava/lang/String;*:
+
+__unknown_file (
+
+gsoncom.google.gson.Gson*B
+
+__unknown_file (&
+$
+	Organizeredu.eci.arsw.model.User2toJson(Ljava/lang/Object;)a
+_
+!< !(O)
+%8#org.springframework.http.HttpStatus"__id*"
+
+__unknown_file (
+""db
+! !(#-
+%9'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntity 
+«
+! !(P
+%10"horg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatus;)V*K
+
+__unknown_file (/
+-
+%9'org.springframework.http.ResponseEntity*4
+
+__unknown_file (
+
+%7java.lang.String*G
+
+__unknown_file (+
+)
+%8#org.springframework.http.HttpStatus";
+! !(Q/
+-
+%9'org.springframework.http.ResponseEntityB42
+0edu.eci.arsw.controllers.SketchsyncAPIControllerH

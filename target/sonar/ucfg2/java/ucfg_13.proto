@@ -1,0 +1,69 @@
+
+wedu.eci.arsw.controllers.SketchsyncAPIController#setWinner(Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;À
+µ/C:/Users/57320/OneDrive - ESCUELA COLOMBIANA DE INGENIERIA JULIO GARAVITO/Uni/2023-2/Proyect ARSW/SketchsyncBack/src/main/java/edu/eci/arsw/controllers/SketchsyncAPIController.java& &(&"startingBlock*¨
+startingBlock&& &(A­
+ª
+&' &(4
+%8"
+__annotate*T
+
+__unknown_file (86
+4org.springframework.web.bind.annotation.PathVariable*6
+
+__unknown_file (
+
+namejava.lang.StringX
+V
+&< &(@
+namejava.lang.String"__annotation*"
+
+__unknown_file (
+
+%8*
+4*¼
+4( ((
+š
+( ((.
+%0(edu.eci.arsw.services.SketchsyncServices"__id*X
+
+__unknown_file (<*:2
+0edu.eci.arsw.controllers.SketchsyncAPIController"
+ds‡„
+( ((
+
+%1void"Gedu.eci.arsw.services.SketchsyncServices#setWinner(Ljava/lang/String;)V*L
+
+__unknown_file (0
+.
+%0(edu.eci.arsw.services.SketchsyncServices*6
+
+__unknown_file (
+
+namejava.lang.String2setWinner(Ljava/lang/String;)*
+1*—
+1,$ ,(.a
+_
+,$ ,(6)
+%5#org.springframework.http.HttpStatus"__id*"
+
+__unknown_file (
+""db
+, ,(#-
+%6'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntity
+þ
+, ,(7
+%7"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*K
+
+__unknown_file (/
+-
+%6'org.springframework.http.ResponseEntity*G
+
+__unknown_file (+
+)
+%5#org.springframework.http.HttpStatus";
+, ,(8/
+-
+%6'org.springframework.http.ResponseEntity:$
+&' &(@
+namejava.lang.StringB42
+0edu.eci.arsw.controllers.SketchsyncAPIControllerH

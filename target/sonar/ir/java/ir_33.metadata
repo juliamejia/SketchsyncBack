@@ -1,0 +1,4 @@
+edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence#setWinner(Ljava/lang/String;)V
+==
+get java.util.Map#get(Ljava/lang/Object;)Ljava/lang/Object;
+setGanador edu.eci.arsw.model.User#setGanador(Z)V

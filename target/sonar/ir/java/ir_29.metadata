@@ -1,0 +1,7 @@
+edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence#addPointToUser(Ledu/eci/arsw/model/User;)V
+==
+getPoints edu.eci.arsw.model.User#getPoints()Ljava/util/ArrayList;
+get java.util.Map#get(Ljava/lang/Object;)Ljava/lang/Object;
+get java.util.ArrayList#get(I)Ljava/lang/Object;
+addPoint edu.eci.arsw.model.User#addPoint(Ledu/eci/arsw/model/Point;)V
+getName edu.eci.arsw.model.User#getName()Ljava/lang/String;

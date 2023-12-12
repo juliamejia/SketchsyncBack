@@ -1,0 +1,5 @@
+edu.eci.arsw.SketchsyncWebSocketConfig#registerStompEndpoints(Lorg/springframework/web/socket/config/annotation/StompEndpointRegistry;)V
+==
+setAllowedOriginPatterns org.springframework.web.socket.config.annotation.StompWebSocketEndpointRegistration#setAllowedOriginPatterns([Ljava/lang/String;)Lorg/springframework/web/socket/config/annotation/StompWebSocketEndpointRegistration;
+addEndpoint org.springframework.web.socket.config.annotation.StompEndpointRegistry#addEndpoint([Ljava/lang/String;)Lorg/springframework/web/socket/config/annotation/StompWebSocketEndpointRegistration;
+withSockJS org.springframework.web.socket.config.annotation.StompWebSocketEndpointRegistration#withSockJS()Lorg/springframework/web/socket/config/annotation/SockJsServiceRegistration;

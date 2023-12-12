@@ -1,0 +1,82 @@
+
+}edu.eci.arsw.controllers.SketchsyncAPIController#saveClue(Ledu/eci/arsw/model/Clue;)Lorg/springframework/http/ResponseEntity;¿
+µ/C:/Users/57320/OneDrive - ESCUELA COLOMBIANA DE INGENIERIA JULIO GARAVITO/Uni/2023-2/Proyect ARSW/SketchsyncBack/src/main/java/edu/eci/arsw/controllers/SketchsyncAPIController.javac c(%"startingBlock*•
+startingBlockc% c(=w
+u
+
+__unknown_file (
+%12"__id*L
+
+__unknown_file (0*.
+
+clueedu.eci.arsw.model.Clue"
+	contenidoö
+ó
+c& c(2
+%13"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%12o
+m
+c8 c(<.
+
+clueedu.eci.arsw.model.Clue"
+	contenido"__annotation*#
+
+__unknown_file (
+
+%13*
+8*J
+6f f(<";
+f f(</
+-
+%3'org.springframework.http.ResponseEntity*ﬂ
+7f( f(2a
+_
+f( f(:)
+%2#org.springframework.http.HttpStatus"__id*"
+
+__unknown_file (
+""db
+f f('-
+%3'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityÅ
+˛
+f f(;
+%4"Vorg.springframework.http.ResponseEntity#<init>(Lorg/springframework/http/HttpStatus;)V*K
+
+__unknown_file (/
+-
+%3'org.springframework.http.ResponseEntity*G
+
+__unknown_file (+
+)
+%2#org.springframework.http.HttpStatus*
+6*”
+8e e(ù
+ö
+e e(.
+%0(edu.eci.arsw.services.SketchsyncServices"__id*X
+
+__unknown_file (<*:2
+0edu.eci.arsw.controllers.SketchsyncAPIController"
+dsûõ
+e e(
+
+%1void"Oedu.eci.arsw.services.SketchsyncServices#addNewClue(Ledu/eci/arsw/model/Clue;)V*L
+
+__unknown_file (0
+.
+%0(edu.eci.arsw.services.SketchsyncServices*=
+
+__unknown_file (!
+
+clueedu.eci.arsw.model.Clue2%addNewClue(Ledu/eci/arsw/model/Clue;)*
+7:+
+c& c(<
+clueedu.eci.arsw.model.ClueB42
+0edu.eci.arsw.controllers.SketchsyncAPIControllerH

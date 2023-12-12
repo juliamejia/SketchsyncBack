@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#getPointsByUser(Ljava/lang/String;)Ljava/util/ArrayList;
+==
+getPointsByUser edu.eci.arsw.persistence.SketchsyncPersistence#getPointsByUser(Ljava/lang/String;)Ljava/util/ArrayList;

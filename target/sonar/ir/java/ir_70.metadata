@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#addNewClue(Ledu/eci/arsw/model/Clue;)V
+==
+saveClue edu.eci.arsw.persistence.SketchsyncPersistence#saveClue(Ledu/eci/arsw/model/Clue;)V

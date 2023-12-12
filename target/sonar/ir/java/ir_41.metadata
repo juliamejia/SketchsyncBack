@@ -1,0 +1,6 @@
+edu.eci.arsw.WebSecurityConfig#configure(Lorg/springframework/security/config/annotation/web/builders/HttpSecurity;)V
+org.springframework.security.config.annotation.web.builders.HttpSecurity#cors()Lorg/springframework/security/config/annotation/web/configurers/CorsConfigurer;
+org.springframework.security.config.annotation.web.builders.HttpSecurity#csrf()Lorg/springframework/security/config/annotation/web/configurers/CsrfConfigurer;
+==
+disable org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer#disable()Lorg/springframework/security/config/annotation/web/HttpSecurityBuilder;
+and org.springframework.security.config.annotation.SecurityConfigurerAdapter#and()Lorg/springframework/security/config/annotation/SecurityBuilder;

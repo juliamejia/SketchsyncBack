@@ -1,0 +1,4 @@
+edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence#getPointsByUser(Ljava/lang/String;)Ljava/util/ArrayList;
+==
+getPoints edu.eci.arsw.model.User#getPoints()Ljava/util/ArrayList;
+get java.util.Map#get(Ljava/lang/Object;)Ljava/lang/Object;

@@ -1,0 +1,3 @@
+edu.eci.arsw.model.User#addPoint(Ledu/eci/arsw/model/Point;)V
+==
+add java.util.ArrayList#add(Ljava/lang/Object;)Z

@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#getAllUsers()Ljava/util/Set;
+==
+getAllUsers edu.eci.arsw.persistence.SketchsyncPersistence#getAllUsers()Ljava/util/Set;

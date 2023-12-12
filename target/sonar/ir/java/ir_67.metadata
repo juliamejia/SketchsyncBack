@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#getWinner()Ledu/eci/arsw/model/User;
+==
+getWinner edu.eci.arsw.persistence.SketchsyncPersistence#getWinner()Ledu/eci/arsw/model/User;

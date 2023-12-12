@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#getOrganizerName()Ledu/eci/arsw/model/User;
+==
+getOrganizerName edu.eci.arsw.persistence.SketchsyncPersistence#getOrganizerName()Ledu/eci/arsw/model/User;

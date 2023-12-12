@@ -1,0 +1,9 @@
+edu.eci.arsw.controllers.STOMPMessage#handlePointEvent(Ledu/eci/arsw/model/Point;Ljava/lang/String;)V
+java.util.ArrayList#<init>()V
+edu.eci.arsw.model.User#instance-init#
+java.util.ArrayList#instance-init#
+edu.eci.arsw.model.User#<init>(Ljava/lang/String;Ljava/util/ArrayList;)V
+==
+addPointToUser edu.eci.arsw.services.SketchsyncServices#addPointToUser(Ledu/eci/arsw/model/User;)V
+add java.util.ArrayList#add(Ljava/lang/Object;)Z
+convertAndSend org.springframework.messaging.core.AbstractMessageSendingTemplate#convertAndSend(Ljava/lang/Object;Ljava/lang/Object;)V

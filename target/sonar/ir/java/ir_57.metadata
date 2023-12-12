@@ -1,0 +1,4 @@
+edu.eci.arsw.controllers.STOMPMessage#handleDeletePointsEvent(Ljava/lang/String;)V
+==
+delteAllPointsUser edu.eci.arsw.services.SketchsyncServices#delteAllPointsUser(Ljava/lang/String;)V
+convertAndSend org.springframework.messaging.core.AbstractMessageSendingTemplate#convertAndSend(Ljava/lang/Object;Ljava/lang/Object;)V

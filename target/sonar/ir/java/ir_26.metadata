@@ -1,0 +1,7 @@
+edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence#getUser(Ljava/lang/String;)Ledu/eci/arsw/model/User;
+edu.eci.arsw.persistence.SketchsyncPersistenceException#instance-init#
+edu.eci.arsw.persistence.SketchsyncPersistenceException#<init>(Ljava/lang/String;)V
+==
+containsKey java.util.Map#containsKey(Ljava/lang/Object;)Z
+get java.util.Map#get(Ljava/lang/Object;)Ljava/lang/Object;
+keySet java.util.Map#keySet()Ljava/util/Set;

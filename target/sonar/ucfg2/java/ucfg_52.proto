@@ -1,0 +1,21 @@
+
+Eedu.eci.arsw.services.SketchsyncServices#getAllUsers()Ljava/util/Set;¸
+­/C:/Users/57320/OneDrive - ESCUELA COLOMBIANA DE INGENIERIA JULIO GARAVITO/Uni/2023-2/Proyect ARSW/SketchsyncBack/src/main/java/edu/eci/arsw/services/SketchsyncServices.java ( "1*¤
+1 (œ
+™
+ (4
+%0.edu.eci.arsw.persistence.SketchsyncPersistence"__id*Q
+
+__unknown_file (5*3*
+(edu.eci.arsw.services.SketchsyncServices"
+dipÒÏ
+ ( 
+%1java.util.Set"Kedu.eci.arsw.persistence.SketchsyncPersistence#getAllUsers()Ljava/util/Set;*R
+
+__unknown_file (6
+4
+%0.edu.eci.arsw.persistence.SketchsyncPersistence2getAllUsers()"!
+ (!
+
+%1java.util.SetB,*
+(edu.eci.arsw.services.SketchsyncServicesH

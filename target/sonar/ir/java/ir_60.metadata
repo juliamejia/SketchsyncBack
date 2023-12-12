@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#addNewUser(Ledu/eci/arsw/model/User;)V
+==
+saveUser edu.eci.arsw.persistence.SketchsyncPersistence#saveUser(Ledu/eci/arsw/model/User;)V

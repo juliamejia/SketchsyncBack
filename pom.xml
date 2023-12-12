@@ -19,9 +19,10 @@
     <java.version>1.8</java.version>
     <spring-cloud-azure.version>6.0.0-beta.3</spring-cloud-azure.version>
 
-    <sonar.organization>juliamejia</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <sonar.login>b4710b1a579eb40856cf46f02a54ff5bdc1a625c</sonar.login>
+    <sonar.projectKey>juliamejia_SketchsyncBack</sonar.projectKey>
+    <sonar.organization>juliamejia</sonar.organization>
     <sonar.branch>main</sonar.branch>
   </properties>
   <dependencies>

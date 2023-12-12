@@ -1,0 +1,6 @@
+edu.eci.arsw.persistence.impl.InMemorySketchsyncPersistence#saveUser(Ledu/eci/arsw/model/User;)V
+java.lang.String#contains(Ljava/lang/CharSequence;)Z
+==
+put java.util.Map#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+containsKey java.util.Map#containsKey(Ljava/lang/Object;)Z
+getName edu.eci.arsw.model.User#getName()Ljava/lang/String;

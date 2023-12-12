@@ -1,0 +1,11 @@
+edu.eci.arsw.WebSecurityConfig#corsConfigurationSource()Lorg/springframework/web/cors/CorsConfigurationSource;
+org.springframework.web.cors.UrlBasedCorsConfigurationSource#<init>()V
+org.springframework.web.cors.CorsConfiguration#instance-init#
+org.springframework.web.cors.CorsConfiguration#<init>()V
+java.util.Arrays#asList([Ljava/lang/Object;)Ljava/util/List;
+org.springframework.web.cors.UrlBasedCorsConfigurationSource#instance-init#
+==
+setAllowCredentials org.springframework.web.cors.CorsConfiguration#setAllowCredentials(Ljava/lang/Boolean;)V
+setAllowedOrigins org.springframework.web.cors.CorsConfiguration#setAllowedOrigins(Ljava/util/List;)V
+setAllowedMethods org.springframework.web.cors.CorsConfiguration#setAllowedMethods(Ljava/util/List;)V
+registerCorsConfiguration org.springframework.web.cors.UrlBasedCorsConfigurationSource#registerCorsConfiguration(Ljava/lang/String;Lorg/springframework/web/cors/CorsConfiguration;)V

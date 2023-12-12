@@ -1,0 +1,3 @@
+edu.eci.arsw.services.SketchsyncServices#deleteParticipantes()V
+==
+deleteParticipantes edu.eci.arsw.persistence.SketchsyncPersistence#deleteParticipantes()V
