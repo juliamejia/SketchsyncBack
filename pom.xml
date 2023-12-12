@@ -21,6 +21,7 @@
 
     <sonar.organization>juliamejia</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    <sonar.login>b4710b1a579eb40856cf46f02a54ff5bdc1a625c</sonar.login>
     <sonar.branch>main</sonar.branch>
   </properties>
   <dependencies>
@@ -192,14 +193,13 @@
         <version>0.8.7</version>
         <executions>
           <execution>
-            <id>prepare-agent</id>
             <goals>
               <goal>prepare-agent</goal>
             </goals>
           </execution>
           <execution>
             <id>report</id>
-            <phase>test</phase>
+            <phase>prepare-package</phase>
             <goals>
               <goal>report</goal>
             </goals>
