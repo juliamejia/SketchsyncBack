@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>InMemorySketchsyncPersistence.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Sketchsync</a> &gt; <a href="index.source.html" class="el_package">edu.eci.arsw.persistence.impl</a> &gt; <span class="el_source">InMemorySketchsyncPersistence.java</span></div><h1>InMemorySketchsyncPersistence.java</h1><pre class="source lang-java linenums">package edu.eci.arsw.persistence.impl;
+
+import edu.eci.arsw.persistence.SketchsyncPersistence;
+import edu.eci.arsw.persistence.SketchsyncPersistenceException;
+import edu.eci.arsw.model.Clue;
+import edu.eci.arsw.model.Point;
+import edu.eci.arsw.model.User;
+import org.springframework.stereotype.Service;
+
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+
+@Service
+public class InMemorySketchsyncPersistence implements SketchsyncPersistence {
+
+<span class="fc" id="L16">    private final Map&lt;String, User&gt; participantes = new ConcurrentHashMap&lt;&gt;();</span>
+
+<span class="fc" id="L18">    private User masterName = null;</span>
+<span class="fc" id="L19">    private Clue nuevaClue = new Clue();</span>
+
+<span class="fc" id="L21">    public InMemorySketchsyncPersistence(){</span>
+<span class="fc" id="L22">    }</span>
+
+
+    @Override
+    public void saveUser(User user) {
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        if(!participantes.containsKey(user.getName())){</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">            if(user.getName().contains(&quot;Organizer&quot;)){</span>
+<span class="fc" id="L29">                masterName = user;</span>
+            }else{
+<span class="fc" id="L31">                participantes.put(user.getName(), user);</span>
+            }
+
+        }
+<span class="fc" id="L35">    }</span>
+
+    @Override
+    public User getUser(String name) throws SketchsyncPersistenceException {
+<span class="fc" id="L39">        Set&lt;String&gt; keys = participantes.keySet();</span>
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">        if(!participantes.containsKey(name)){</span>
+<span class="nc" id="L41">            throw new SketchsyncPersistenceException(SketchsyncPersistenceException.NO_USER);</span>
+        }
+<span class="fc" id="L43">        return participantes.get(name);</span>
+    }
+
+    @Override
+    public Set&lt;User&gt; getAllUsers() {
+<span class="fc" id="L48">        Set&lt;User&gt; users = new HashSet&lt;&gt;();</span>
+<span class="fc" id="L49">        Set&lt;String&gt; keys = participantes.keySet();</span>
+
+<span class="fc bfc" id="L51" title="All 2 branches covered.">        for (String name: keys){</span>
+<span class="fc" id="L52">            users.add(participantes.get(name));</span>
+<span class="fc" id="L53">        }</span>
+<span class="fc" id="L54">        return users;</span>
+    }
+
+    @Override
+    public ArrayList&lt;Point&gt; getPointsByUser(String name) {
+<span class="fc" id="L59">        return participantes.get(name).getPoints();</span>
+    }
+
+    @Override
+    public void addPointToUser(User user) {
+<span class="fc" id="L64">        participantes.get(user.getName()).addPoint(user.getPoints().get(0));</span>
+<span class="fc" id="L65">    }</span>
+
+    @Override
+    public void delteAllPointsUser(String name) {
+<span class="fc" id="L69">        participantes.get(name).deletePoints();</span>
+<span class="fc" id="L70">    }</span>
+
+    @Override
+    public User getOrganizerName() {
+<span class="fc" id="L74">        return masterName;</span>
+    }
+
+    @Override
+    public User getWinner() {
+<span class="fc" id="L79">        Set&lt;User&gt; users = new HashSet&lt;&gt;();</span>
+<span class="fc" id="L80">        Set&lt;String&gt; keys = participantes.keySet();</span>
+<span class="fc" id="L81">        User ganador = null;</span>
+
+<span class="fc bfc" id="L83" title="All 2 branches covered.">        for (String name: keys){</span>
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">            if(participantes.get(name).isGanador()){</span>
+<span class="fc" id="L85">                ganador = participantes.get(name);</span>
+            }
+<span class="fc" id="L87">        }</span>
+<span class="fc" id="L88">        return ganador;</span>
+    }
+
+    @Override
+    public void setWinner(String name) {
+<span class="fc" id="L93">        participantes.get(name).setGanador(true);</span>
+<span class="fc" id="L94">    }</span>
+
+    @Override
+    public void deleteParticipantes() {
+<span class="fc" id="L98">        participantes.clear();</span>
+<span class="fc" id="L99">    }</span>
+
+    @Override
+    public void saveClue(Clue clue) throws SketchsyncPersistenceException {
+<span class="fc" id="L103">        nuevaClue = new Clue(clue.getContenido(), clue.getTomada());</span>
+<span class="fc" id="L104">    }</span>
+
+    @Override
+    public String TakeClue(){
+<span class="fc" id="L108">        synchronized (nuevaClue){</span>
+
+<span class="pc bpc" id="L110" title="1 of 2 branches missed.">            if (!nuevaClue.getTomada()){</span>
+<span class="fc" id="L111">                nuevaClue.setTomada(true);</span>
+<span class="fc" id="L112">                return nuevaClue.getContenido();</span>
+            }else {
+<span class="nc" id="L114">                return &quot;Pista no disponible!&quot;;</span>
+            }
+        }
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

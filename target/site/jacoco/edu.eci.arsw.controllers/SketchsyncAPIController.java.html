@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SketchsyncAPIController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Sketchsync</a> &gt; <a href="index.source.html" class="el_package">edu.eci.arsw.controllers</a> &gt; <span class="el_source">SketchsyncAPIController.java</span></div><h1>SketchsyncAPIController.java</h1><pre class="source lang-java linenums">package edu.eci.arsw.controllers;
+
+import com.google.gson.Gson;
+import edu.eci.arsw.model.Clue;
+import edu.eci.arsw.model.User;
+import edu.eci.arsw.persistence.SketchsyncPersistenceException;
+import edu.eci.arsw.services.SketchsyncServices;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+@RestController
+@RequestMapping(value=&quot;/Sketchsync&quot;)
+<span class="nc" id="L19">public class SketchsyncAPIController {</span>
+
+<span class="nc" id="L21">    @Autowired</span>
+    SketchsyncServices ds = null;
+
+    @RequestMapping(path = &quot;/OrganizerName/OrganizerName&quot; , method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity&lt;?&gt; getOrganizerName() {
+<span class="nc" id="L26">        User Organizer = null;</span>
+        try {
+<span class="nc" id="L28">            Organizer = ds.getOrganizerName();</span>
+<span class="nc" id="L29">        } catch (Exception e) {</span>
+<span class="nc" id="L30">            return new ResponseEntity&lt;&gt;(&quot;Error&quot;,HttpStatus.NOT_FOUND);</span>
+<span class="nc" id="L31">        }</span>
+<span class="nc" id="L32">        Gson gson = new Gson();</span>
+<span class="nc" id="L33">        return new ResponseEntity&lt;&gt;(gson.toJson(Organizer), HttpStatus.ACCEPTED);</span>
+
+    }
+
+    @RequestMapping(path = &quot;/{name}&quot; , method = RequestMethod.PUT, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity&lt;?&gt; setWinner(@PathVariable String name) {
+        try {
+<span class="nc" id="L40">            ds.setWinner(name);</span>
+<span class="nc" id="L41">        } catch (Exception e) {</span>
+<span class="nc" id="L42">            return new ResponseEntity&lt;&gt;(&quot;Error&quot;,HttpStatus.NOT_FOUND);</span>
+<span class="nc" id="L43">        }</span>
+<span class="nc" id="L44">        return new ResponseEntity&lt;&gt;(HttpStatus.CREATED);</span>
+
+    }
+
+    @RequestMapping(path= &quot;/clean&quot;, method = RequestMethod.DELETE)
+    public ResponseEntity&lt;?&gt; deleteParticipantes() {
+        try {
+<span class="nc" id="L51">            ds.deleteParticipantes();</span>
+<span class="nc" id="L52">        } catch (Exception e) {</span>
+<span class="nc" id="L53">            return new ResponseEntity&lt;&gt;(HttpStatus.NOT_FOUND);</span>
+<span class="nc" id="L54">        }</span>
+<span class="nc" id="L55">        return new ResponseEntity&lt;&gt;(HttpStatus.CREATED);</span>
+
+    }
+
+    @RequestMapping(path = &quot;/{name}&quot; , method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity&lt;?&gt; getBlueprintByAuthorName(@PathVariable String name) {
+<span class="nc" id="L61">        User user = null;</span>
+        try {
+<span class="nc" id="L63">            user = ds.getUser(name);</span>
+<span class="nc" id="L64">        } catch (SketchsyncPersistenceException e) {</span>
+<span class="nc" id="L65">            return new ResponseEntity&lt;&gt;(&quot;Error&quot;,HttpStatus.NOT_FOUND);</span>
+<span class="nc" id="L66">        }</span>
+<span class="nc" id="L67">        Gson gson = new Gson();</span>
+<span class="nc" id="L68">        return new ResponseEntity&lt;&gt;(gson.toJson(user), HttpStatus.ACCEPTED);</span>
+
+    }
+
+
+
+    @RequestMapping(method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity&lt;?&gt; postUser(@RequestBody User user){
+        try {
+<span class="nc" id="L77">            ds.addNewUser(user);</span>
+            //registrar dato
+<span class="nc" id="L79">            return new ResponseEntity&lt;&gt;(HttpStatus.CREATED);</span>
+<span class="nc" id="L80">        } catch (Exception ex) {</span>
+<span class="nc" id="L81">            Logger.getLogger(SketchsyncAPIController.class.getName()).log(Level.SEVERE, null, ex);</span>
+<span class="nc" id="L82">            return new ResponseEntity&lt;&gt;(&quot;Error&quot;,HttpStatus.FORBIDDEN);</span>
+        }
+
+    }
+
+    @RequestMapping(path = &quot;/all&quot;, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity&lt;?&gt; getUsers() {
+        try {
+<span class="nc" id="L90">            Gson gson = new Gson();</span>
+<span class="nc" id="L91">            return new ResponseEntity&lt;&gt;(gson.toJson(ds.getAllUsers()), HttpStatus.ACCEPTED);</span>
+<span class="nc" id="L92">        } catch (Exception e) {</span>
+<span class="nc" id="L93">            Logger.getLogger(SketchsyncAPIController.class.getName()).log(Level.SEVERE, null, e);</span>
+<span class="nc" id="L94">            return new ResponseEntity&lt;&gt;(&quot;Error al buscar a los participantes&quot;, HttpStatus.NOT_FOUND);</span>
+        }
+    }
+
+    @RequestMapping(path = &quot;/Clue&quot;, method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity&lt;?&gt; saveClue(@RequestBody Clue clue){
+        try {
+<span class="nc" id="L101">            ds.addNewClue(clue);</span>
+<span class="nc" id="L102">            return new ResponseEntity&lt;&gt;(HttpStatus.CREATED);</span>
+<span class="nc" id="L103">        } catch (Exception ex){</span>
+<span class="nc" id="L104">            Logger.getLogger(SketchsyncAPIController.class.getName()).log(Level.SEVERE, null, ex);</span>
+<span class="nc" id="L105">            return new ResponseEntity&lt;&gt;(&quot;No se ha podido crear la pista&quot;, HttpStatus.FORBIDDEN);</span>
+        }
+    }
+
+    @RequestMapping(path = &quot;/TakeClue&quot;, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity&lt;?&gt; TakeClue() {
+        try {
+<span class="nc" id="L112">            Gson gson = new Gson();</span>
+<span class="nc" id="L113">            return new ResponseEntity&lt;&gt;(gson.toJson(ds.TakeClue()), HttpStatus.ACCEPTED);</span>
+<span class="nc" id="L114">        } catch (Exception e) {</span>
+<span class="nc" id="L115">            Logger.getLogger(SketchsyncAPIController.class.getName()).log(Level.SEVERE, null, e);</span>
+<span class="nc" id="L116">            return new ResponseEntity&lt;&gt;(&quot;Error al buscar a los participantes&quot;, HttpStatus.NOT_FOUND);</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

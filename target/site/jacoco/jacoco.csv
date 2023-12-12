@@ -1,0 +1,12 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Sketchsync,edu.eci.arsw.persistence.impl,InMemorySketchsyncPersistence,9,190,3,11,2,43,3,17,0,13
+Sketchsync,edu.eci.arsw.controllers,SketchsyncAPIController,193,0,0,0,46,0,9,0,9,0
+Sketchsync,edu.eci.arsw.controllers,STOMPMessage,54,0,0,0,11,0,3,0,3,0
+Sketchsync,edu.eci.arsw.persistence,SketchsyncPersistenceException,9,0,0,0,4,0,2,0,2,0
+Sketchsync,edu.eci.arsw.services,SketchsyncServices,61,0,0,0,19,0,13,0,13,0
+Sketchsync,edu.eci.arsw.model,Point,17,9,0,0,8,4,5,1,5,1
+Sketchsync,edu.eci.arsw.model,User,19,40,0,0,5,15,3,7,3,7
+Sketchsync,edu.eci.arsw.model,Clue,4,22,0,0,2,9,1,5,1,5
+Sketchsync,edu.eci.arsw,WebSecurityConfig,59,0,0,0,10,0,3,0,3,0
+Sketchsync,edu.eci.arsw,SketchsyncWebSocketConfig,48,0,0,0,6,0,3,0,3,0
+Sketchsync,edu.eci.arsw,SketchsyncAPIApplication,8,0,0,0,3,0,2,0,2,0
